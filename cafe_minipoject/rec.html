@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="mp.css" rel="stylesheet">
+    
+    <link rel="icon" href="KMV_CAFE.png"/>
+    <title>Order Summary</title>
+    <style>
+        body{
+            
+      background: linear-gradient(rgba(0, 0, 0, 0.627), rgba(0, 0, 0, 0.825)), url(cafe.jpg);
+      background-size: cover;
+      background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <nav class="navbar navbar-expand-lg bg-black">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home.html" style="color: rgb(147, 99, 64); padding: 0px 30px;font-size:xx-large;">Payment</a>
+              
+            </div>
+          </nav>
+    </header>
+    <br>
+    <diV class="dets" action="rec.html" method="get">
+        Enter Your Number: <input type="number" placeholder="Enter your Number Here">
+        <br><br>
+        <button class="btn">Display Details</button>
+        <br><br>
+        <label>Name: </label>
+        <br><br>
+        <label>Number: </label>
+        <br><br>
+        <label>Address: </label>
+        <br><br>
+        <label>Email Id: </label>
+        <br><br>
+        <br><br>
+            <div>
+                <Button class="btn" onclick="price()"> Display Reciept</Button>
+                <br><br>
+                <label>Price: Rs 500</label>
+                <br><br>
+                <label>Tax amount:  +5%</label>
+                <br><br>
+                <label>Total amount: <h1 id="amt"></h1></label>
+                <br>
+                <br>
+                <div>
+                    <a href="payment.html">     
+                <Button class="btn">Proceed to Checkout</Button>
+                    </a>
+            </div>
+            </div>
+        </diV>
+    </diV>
+    <br>
+    <br>
+    <script>
+        function price(){
+        var x=500;
+
+        var tamt=x*1.05;
+        document.getElementById("amt").innerHTML=tamt;
+        
+        }
+    </script>
+    
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: black; color: rgb(147, 99, 64);">
+          © 2022 Copyright KMV Cafe. All rights reserved.
+              </div>
+     </footer>
+</body>
+</html>
